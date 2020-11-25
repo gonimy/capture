@@ -1,8 +1,9 @@
+const { AboutUs } = require("./pages/AboutUs");
 
 function App() {
   return (
     <div className="App">
-    <h1>hello Portfolio</h1>
+      <AboutUs />
     </div>
   );
 }
