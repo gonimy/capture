@@ -5,6 +5,7 @@ import { OurWork } from "./pages/OurWork";
 import { AboutUs } from "./pages/AboutUs";
 
 import { Switch, Route } from "react-router-dom";
+import { MovieDetails } from "./pages/MovieDetails";
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
         <Route path="/" exact>
           <AboutUs />
         </Route>
-        <Route path="/work">
+        <Route path="/work" exact>
           <OurWork />
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetails />
         </Route>
         <Route path="/contact">
           <ContactUs />
