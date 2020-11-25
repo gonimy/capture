@@ -15,7 +15,7 @@ export const Desc = styled.div`
     font-weight: lighter;
   }
 `;
-export const image = styled.div`
+export const Image = styled.div`
   flex: 1;
   overflow: hidden;
 

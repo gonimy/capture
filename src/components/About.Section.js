@@ -2,7 +2,7 @@ import React from "react";
 import home1 from "../img/home1.png";
 
 //styled our components
-import { About, Desc, image, Hide } from "../Styles";
+import { About, Desc, Image, Hide } from "../Styles";
 
 export const AboutSection = () => {
   return (
@@ -27,9 +27,9 @@ export const AboutSection = () => {
         </p>
         <button>Contact Us</button>
       </Desc>
-      <image>
+      <Image>
         <img src={home1} alt="guy with a camera" />
-      </image>
+      </Image>
     </About>
   );
 };
