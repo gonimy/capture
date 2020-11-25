@@ -1,37 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import home1 from "../img/home1.png";
 
 //styled our components
-const About = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  padding: 5rem 10rem;
-`;
-const Desc = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-const image = styled.div`
-  flex: 1;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
+import { About, Desc, image, Hide } from "../Styles";
 
 export const AboutSection = () => {
   return (

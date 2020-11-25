@@ -8,6 +8,8 @@ const GlobalStyled = createGlobalStyle`
 }
 body{
     background:#1b1b1b;
+    font-family: 'Inter', sans-serif;
+
 }
 button{
     font-weight:bold;
@@ -25,7 +27,7 @@ button{
 }
 h2{
     font-weight:lighter;
-    font-size:4rem;
+    font-size:3rem;
 
 }
 h3{
