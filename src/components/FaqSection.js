@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { About, Desc, image } from "../Styles";
+import { About } from "../Styles";
+import Toggle from "./Toggle";
 const Faq = styled(About)`
   display: block;
   span {
@@ -20,8 +21,8 @@ const Faq = styled(About)`
   .question {
     padding: 3rem 0rem;
     cursor: pointer;
-    h4{
-        font-size:1.5rem;
+    h4 {
+      font-size: 1.5rem;
     }
   }
   .answer {
@@ -29,7 +30,6 @@ const Faq = styled(About)`
     p {
       padding: 1rem 0rem;
     }
- 
   }
 `;
 
@@ -39,42 +39,42 @@ export const FaqSection = () => {
       <h2>
         Any Question ? <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How Do We Started ?</h4>
+      <Toggle title="How Do I Start?">
         <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            reprehenderit perferendis sunt magni dolores ratione.
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>How Much We Take ?</h4>
+      </Toggle>
+      <Toggle title="What Products do you offer?">
         <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            reprehenderit perferendis sunt magni dolores ratione.
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>How Good We Are ?</h4>
+      </Toggle>
+      <Toggle title="Diferrent Payment Methods">
         <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            reprehenderit perferendis sunt magni dolores ratione.
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Why US ?</h4>
+      </Toggle>
+      <Toggle title="Daily Schedule">
         <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            reprehenderit perferendis sunt magni dolores ratione.
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
     </Faq>
   );
 };

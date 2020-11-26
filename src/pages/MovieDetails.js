@@ -1,9 +1,11 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import { pageAnimation } from "../Animation";
 import { MovieState } from "../movieState";
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: white;
 `;
 const HeadLine = styled.div`
@@ -57,7 +59,7 @@ const ImageDisplay = styled.div`
     object-fit: cover;
   }
 `;
- const Award = ({ title, description }) => {
+const Award = ({ title, description }) => {
   return (
     <AwardStyle>
       <h3>{title}</h3>
@@ -78,17 +80,21 @@ export const MovieDetails = () => {
     setMovie(currMovie[0]);
   }, [movies, url]);
 
-  
   return (
     <>
       {movie && (
-        <Details>
+        <Details
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <HeadLine>
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt="" />
           </HeadLine>
           <Awards>
-          {movie.awards.map((award) => (
+            {movie.awards.map((award) => (
               <Award
                 key={award.title}
                 title={award.title}

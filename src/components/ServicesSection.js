@@ -10,20 +10,28 @@ import styled from "styled-components";
 // styled our components
 
 const Services = styled(About)`
-
   h2 {
     padding-bottom: 3rem;
-    font-size:2.5rem;
+    font-size: 2.5rem;
   }
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+  }
+
+  @media (max-width: 1500px) {
+    display: block;
+    padding: 2rem 2rem;
   }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 1500px) {
+    justify-content: center;
+  }
 `;
 const Card = styled.div`
   flex-basis: 13rem;
@@ -37,6 +45,12 @@ const Card = styled.div`
     font-size: 1.2rem;
     color: black;
     padding: 1rem;
+  }
+
+  @media (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
